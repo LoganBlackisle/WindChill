@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<script src="windchill.js"></script>
+<body>
+
+     <head>
+          <td align="center">
+               <h2 align="center">Wind Chill</h2>
+     </head>
+     <table border="0" cellpadding="4" cellspacing="0" width="525">
+          <tbody>
+               <tr>
+                    <form name="Convert">&nbsp;
+                         <table align="center" border="1" width="50%">
+                              <tbody>
+                                   <tr>
+                                        <td>
+                                             <h5>
+                                                  <font color="#ff0000">Enter a temperature and wind speed that you
+                                                       would like calculated:</font>
+                                             </h5>
+                                        </td>
+                                        <td>
+                                             <h5>
+                                                  <font color="#ff0000">What the temperature feels like to your body:
+                                                  </font>
+                                             </h5>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td>
+                                             <font color="#ff0000"><input name="Temp" size="6" type="text" /> <input
+                                                       checked="checked" name="tempunit" type="radio"
+                                                       value="degC" />Celsius <input name="tempunit" type="radio"
+                                                       value="degF" />Fahrenheit</font>
+                                        </td>
+                                        <td>
+                                             <font color="#ff0000"><input name="Cels" size="6" type="text" />&deg; C
+                                             </font>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td>
+                                             <font color="#ff0000"><input maxlength="5" name="windspeed" size="5"
+                                                       type="text" /> <input checked="checked" name="windunit"
+                                                       type="radio" value="k/h" />km/h<input name="windunit"
+                                                       type="radio" value="m/s" />m/s<input name="windunit"
+                                                       type="radio" value="mph" />mph<input name="windunit"
+                                                       type="radio" value="knots" />knots</font>
+                                        </td>
+                                        <td>
+                                             <font color="#ff0000"><input name="Fahr" size="6" type="text" />&deg; F
+                                             </font>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td>&nbsp;</td>
+                                        <td>
+                                             <font color="#ff0000"><input name="Watts" size="6" type="text" />Watts per
+                                                  Meter Squared</font>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td>
+                                             <input
+                                                  onclick="decideConvert(document.Convert.Temp.value, document.Convert.windspeed.value)"
+                                                  type="button" value="Convert" />
+                                        </td>
+                                        <td><input onclick="setToNull()" type="button" value="Clear Values" /></td>
+                                   </tr>
+                              </tbody>
+                         </table>
+                    </form>
+               </tr>
+          </tbody>
+     </table>
+</body>
+
+</html>
